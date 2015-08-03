@@ -15,7 +15,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<link rel="stylesheet" href="reveal/css/reveal.css">
-		<link rel="stylesheet" href="reveal/css/theme/gdidefault.css" id="theme">
+		<link rel="stylesheet" href="reveal/css/theme/gdicool.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
@@ -38,37 +38,8 @@
 			<div class="slides">
 			  <!-- Opening slide -->
         <section>
-          <img src = "images/gdi_logo_badge.png" style="border: 0; background: transparent; box-shadow: none;">
-          <h4>HTML &amp; CSS for Beginners</h4>
+          <h4>HTML &amp; CSS</h4>
           <h4><span class="blue">Part 1</span></h4>
-        </section>
-
-        <!-- Welcome-->
-        <section class="hide-pdf">
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
-          <ul>
-            <li>We are here for you!</li>
-            <li>Every question is important</li>
-            <li>Help each other</li>
-            <li>Have fun</li>
-          </ul>
-          </div>
-        </section>
-
-        <section>
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p class = "blue">Tell us about yourself.</p>
-          <ul>
-            <li>Who are you?</li>
-            <li>What do you hope to get out of the class?</li>
-            <li>What is your favorite dinosaur?</li>
-            <img src="images/dinosaur.jpeg" />
-          </ul>
-          </div>
         </section>
 
         <!-- What is HTML?-->
@@ -155,34 +126,16 @@
               <div>TextWrangler - Mac</div>
               <div>Notepad ++ - Windows</div>
               <div>Sublime Text - Linux, Mac or Windows</div>
+							<div>Atom - Linux, Mac or Windows</div>
               <div>gedit - Linux</div>
              </li>
           </ul>
         </section>
-       <!-- Commenting out sublime text intro so teachers can choose whether or not to use sublime text in class-->
-         <!-- intro to sublime text 2 -->
 
-        <!-- <section>
-          <h3>Get Started: Sublime Text 2</h3>
-          <p class="left"><strong>We'll be using Sublime Text 2 in class today.</strong></p>
-          <ol>
-            <li>
-              <p>Download ST2 from www.sublimetext.com/2</p>
-            </li>
-            <li>
-              <p>Turn off Auto Correct &amp; Tab Completion<br/></p>
-              <p>Modify your the preferences / settings by adding these lines to the code:</p>
-              <ul >
-                <li style="margin: 0 0 0 40px;">"tab_completion": false</li>
-                <li style="margin: 0 0 0 40px;">"auto_complete": false,</li>
-              </ul>
-            </li>
-          </ol>
-        </section> -->
         <!-- Folder Structure -->
          <section>
           <h3>Get Started: Folder Structure</h3>
-          <p>All the files for your site should be stored within the same folder.</p>
+          <p>All the files for your site should be stored within the same folder under your name.</p>
 
           <div class="left" style="width: 45%;">
           <p class="left-align"><strong>This includes:</strong></p>
@@ -264,7 +217,7 @@
         <!--anatomy of a tag -->
         <section>
         	<h3>Tag Breakdown</h3>
-        	<img src="images/tagbreakdown.png" alt="Tag breakdown" style="border: none; box-shadow: none;" />
+        	<img src="images/tagbreakdown.jpg" alt="Tag breakdown" style="border: none; box-shadow: none;" />
         </section>
         <section>
          <h3>Anatomy of an HTML element</h3>
@@ -466,7 +419,7 @@
             <h6 style = "font-size: 75%">Heading 6</h6>
           </div>
           <div class ="clear"></div>
-          <p>* Heading number indicates hierarchy, not size. Think: Outlines from high school papers</p>
+          <p>* Heading number indicates hierarchy, not size. Think: Outlines from school papers</p>
           </div>
         </section>
 
@@ -494,7 +447,6 @@
           <div class ="clear"></div>
           <br/>
           <br/>
-          <p>* Notice: em and strong are meant to indicate meaning through code. If you want to have italicized for style appearance and not to communicate meaning, you should use CSS.</p>
           </div>
         </section>
 <!--develop it!-->
@@ -503,6 +455,16 @@
 			<p class="left-align">Let's add some content to our site!</p>
 			<p class="left-align">Add one of each level of heading with 1-2 short paragraphs of text below each heading. </p>
 			<p class="left-align">Create some <em>emphasized</em> and <strong>strong</strong> text within a few paragraphs.</p>
+			<p>Your website can be about anything! Some examples:
+				<ul>
+					<li>Your favorite animal</li>
+					<li>Your favorite book</li>
+					<li>Your family</li>
+					<li>Your summer</li>
+					<li>Your favorite sports celebrity</li>
+					<li>Your favorite pop star</li>
+				</ul>
+			</p>
 
 		</section>
 
@@ -575,13 +537,13 @@
           <p>Images have three components</p>
           <ul>
             <li>Tag: &lt;img/></li>
-            <li>Src attribute: "http://girldevelopit.com/assets/pink-logo.png"</li>
-            <li>Alt attribute: "Girl Develop It logo"</li>
+            <li>Src attribute: "images/dinosaur.jpeg"</li>
+            <li>Alt attribute: "My favorite dinosaur!"</li>
           </ul>
 <pre><code>
-&lt;img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/>
+&lt;img src ="images/dinosaur.jpeg" alt = "My favorite dinosaur!"/>
 </code></pre>
-<img src ="http://girldevelopit.com/assets/pink-logo.png" alt = "Girl Develop It Logo"/>
+<img src ="images/dinosaur.jpeg" alt = "My favorite dinosaur!"/>
           <p><small>* Notice: This tag is our first example of a stand-alone or "self-closing" element.</small></p>
 
         </section>
@@ -592,19 +554,19 @@
           <div class = "left" style = "width:50%">
 <pre><code>
 &lt;p>
-  Imagine there's no Heaven &lt;br/>
-  It's easy if you try &lt;br/>
-  No hell below us  &lt;br/>
-  Above us only sky
+  Twinkle, twinkle little star &lt;br/>
+  How I wonder what you are &lt;br/>
+  Up above the world so high  &lt;br/>
+  Like a diamond in the sky
 &lt;/p>
 </code></pre>
           </div>
           <div class = "left left-align" style = "width:50%">
             <p>
-            Imagine there's no Heaven <br/>
-            It's easy if you try <br/>
-            No hell below us  <br/>
-            Above us only sky
+							Twinkle, twinkle little star <br/>
+						  How I wonder what you are <br/>
+						  Up above the world so high  <br/>
+						  Like a diamond in the sky
             </p>
           </div>
           <div class ="clear"></div>
@@ -701,12 +663,12 @@
 <pre><code>
 &lt;table>
   &lt;tr>
-    &lt;th>Head&lt;/th>
-    &lt;th>Head&lt;/th>
+    &lt;th>Heading&lt;/th>
+    &lt;th>Heading&lt;/th>
   &lt;/tr>
   &lt;tr>
-    &lt;td>Data&lt;/td>
-    &lt;td>Data&lt;/td>
+    &lt;td>Text&lt;/td>
+    &lt;td>Text&lt;/td>
   &lt;/tr>
 &lt;/table>
 </code></pre>
@@ -714,12 +676,12 @@
           <div class = "left left-align" style = "width:50%">
             <table style="border: 1px solid">
               <tr>
-                <th style="border: 1px solid">Head</th>
-                <th style="border: 1px solid">Head</th>
+                <th style="border: 1px solid">Heading</th>
+                <th style="border: 1px solid">Heading</th>
               </tr>
               <tr>
-                <td style="border: 1px solid">Data</td>
-                <td style="border: 1px solid">Data</td>
+                <td style="border: 1px solid">Text</td>
+                <td style="border: 1px solid">Text</td>
               </tr>
             </table>
           </div>
@@ -754,17 +716,11 @@
 
         </section>        <!-- -->
         <section>
-          <h2>Questions?</h2>
-          <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
+          <h3>Let's develop it!</h3>
+          	<p>Let's add a table to our page.</p>
             <div class ="clear"></div></div>
         </section>
 			</div>
-  		<footer>
-        <div class="copyright">
-          HTML/CSS ~ Girl Develop It ~
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
-        </div>
-      </footer>
 		</div>
 
 
