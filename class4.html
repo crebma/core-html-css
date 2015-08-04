@@ -15,7 +15,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<link rel="stylesheet" href="reveal/css/reveal.css">
-		<link rel="stylesheet" href="reveal/css/theme/gdidefault.css" id="theme">
+		<link rel="stylesheet" href="reveal/css/theme/gdicool.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<!-- light editor<link rel="stylesheet" href="lib/css/light.css">-->
@@ -38,24 +38,8 @@
 			<div class="slides">
 			  <!-- Opening slide -->
         <section>
-          <img src = "images/gdi_logo_badge.png" style="border: 0; background: transparent; box-shadow: none;">
-          <h4>HTML &amp; CSS for Beginners</h4>
-          <h4><span class="blue">Part 4</span></h4>
-        </section>
-
-        <!-- Welcome-->
-        <section>
-          <h3>Welcome!</h3>
-          <div class = "left-align">
-          <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
-          <p class ="green">Some "rules"</p>
-          <ul>
-            <li>We are here for you!</li>
-            <li>Every question is important</li>
-            <li>Help each other</li>
-            <li>Have fun</li>
-          </ul>
-          </div>
+          <h2>HTML &amp; CSS</h2>
+          <h3><span class="blue">Part 4</span></h3>
         </section>
 
         <section>
@@ -133,7 +117,7 @@
  <div style="border:2px solid black;">
  <div style="position: relative; left: 80px; top: 20px;
    height: 100px; background-color: yellow; color:black; text-align:left">
-   Hello, hi!
+   I am relatively positioned slightly down and to the left from my parent element!
  </div>
  </div>
        </section>
@@ -225,103 +209,15 @@
        	<p>Let's create a div that contains an image and a caption, and position the caption absolutely overtop the image.</p>
 
        </section>
-       <!-- Float-->
-       <section>
-         <h3>Float</h3>
-         <div class = "left-align">
-          	<ul>
-          	<li>"Floating" an element takes it in the normal flow, as far to the left or right of it's containing element as possible.</li>
-          	<li>Any other elements, such as paragraphs or lists, will wrap around the floated element.</li>
-          	<li>Always specify a width when floating an element, otherwise the element is likely to take up the whole page and not appear floated.</li>
-            <li>You can specify a) whether an element is floated or not, and b) which side it ﬂoats on.</li>
-          	</ul>
-         </div>
-       </section>
-       <!--example float-->
-       <section>
-       <h3>Float: Example</h3>
-       <p>Below a &lt;blockquote> is floated to the left, allowing text to wrap around it on the right</p>
-       <img src="images/example-floatbq.png" alt="example float" />
-       </section>
-       <section>
-         <h3>Float</h3>
-<pre><code class ="html">
-  .float{
-    float:left;
-    width:200px;
-    background:yellow;
-  }
-</code></pre>
-        <div style ="float:left; text-align: left;width:200px;background:yellow; color:black; padding: 10px;">
-          <small>Hi, I'm a yellow box with black text.<br/>
-          I like to hang out on the left side.</small><br/>
-        </div>
-        <div class = "left-align">Not floating element</div>
-        <div class = "left-align">Not floating element</div>
-         <div class = "left-align">Not floating element with wrapping Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-       </section>
 
-       <section>
-       <h3>Using floats to place elements side by side</h3>
-       <p>If you want two block level elements to be side by side, you need to float both elements. One left, and one right.</p>
-       <img src="images/example-float-column.png" />
+			 <section>
+       	<h3>Put on the finishing touches!</h3>
+       	<p>Spend the rest of your time making your website look awesome.</p>
+				<p>Your camp coach can help you put your website on the internet if it's not already!</p>
+
        </section>
-       <!-- Clear-->
-       <section>
-         <h3>Clear</h3>
-         <ul>
-         <li>Clearing tells the element on which side (right, left, both) other elements <strong>cannot</strong> appear. </li>
-         <li>If you had an image floated left, and you did not want the paragraph to appear next to it, you would add <strong>clear: left;</strong> to the paragraph.</li>
-         <li>Clearing both sides makes sure ﬂoats don’t ﬂow past the clear element.</li>
-         </ul>
-<pre><code class = "html">
-  clear: right;
-  clear: left;
-  clear: both;
-</code></pre>
-       </section>
+		 </div>
 
-       <section>
-          <h3>Clear</h3>
- <pre><code class ="html">
-   .float{
-     float:left;
-     width:50px;
-     background:yellow;
-   }
-   .clear-left{
-     clear:left
-   }
- </code></pre>
-         <div style ="float:left;width:50px;background:yellow; color:black; ">
-           hi<br/>
-           hi<br/>
-           hi<br/>
-         </div>
-         <div class = "left-align">Not floating element</div>
-         <div class = "left-align">Not floating element</div>
-         <div class = "left-align" style="clear: left;">Non-floating element with a class of <strong>.clear-left</strong></div>
-        </section>
-
-        <!-- Exercise-->
-       <section>
-         <h3>Let's Develop It</h3>
-         <p>Let's float our side bar and content areas.</p>
-       </section>       <!-- Question-->
-        <section>
-          <h2>Questions?</h2>
-          <div style = "font-size:1200%; height:100%; margin-top:30%" class ="blue">?
-            <div class ="clear"></div></div>
-        </section>
-
-      </div>
-
-      <footer>
-        <div class="copyright">
-          HTML/CSS ~ Girl Develop It ~
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
-        </div>
-      </footer>
 		</div>
 
 

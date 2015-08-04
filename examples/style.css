@@ -1,0 +1,31 @@
+.box {
+  border: 1px solid black;
+}
+
+.header {
+  height: 20%
+}
+
+.sidebar {
+  float: left;
+  width: 20%;
+  height: 80%
+}
+
+.content {
+  float: right;
+  width: 79%;
+  height: 80%
+}
+
+.clear {
+  clear: both;
+}
+
+.footer {
+  height: 20%
+}
+
+.red {
+  color: red;
+}
